@@ -13,3 +13,8 @@ $factory('App\Models\Post', [
     'title' => $faker->sentence,
     'body' => $faker->paragraph,
 ]);
+
+$factory('App\Models\Comment', [
+    'post_id' => 'factory:App\Models\Post',
+    'body' => $faker->paragraph,
+]);

@@ -2,5 +2,7 @@
 
 return [
     App\Providers\AppServiceProvider::class,
-    Laracasts\Generators\GeneratorsServiceProvider::class
+    App\Providers\Filament\AdminPanelProvider::class,
+    App\Providers\TelescopeServiceProvider::class,
+    Laracasts\Generators\GeneratorsServiceProvider::class,
 ];
